@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
+    <title> Cyber security </title>
+</head>
+<body>
+   
+
+    <!-- navbar -->
+    <header>
+
+<div class="nav">
+    <div id="nav-logo">🛡</div>
+    <div id="logo1-1"> LinkShield <br><span id = "logo1-2"> URL Security Analyzer </span></div>
+    <ul id="list"> 
+        <a class="a-tag" href="#head1"> <li>Home </li></a>
+        <a class="a-tag" href="#feature-head"> <li> Features</li></a>
+        <a class="a-tag" href="#pro"> <li>How It Works </li></a>
+        <a class="a-tag" href="#about"> <li> About </li></a>
+    </ul>
+
+</div>
+</header><br><br><br><br><br>
+
+<!--<video autoplay loop muted playsinline   id="vid"> 
+        <source src="video-1791997909994.mp4" type="video/mp4">
+    </video>-->
+<!-- main body part -->
+<div id="head1"> 🛡 Client-Side Security Tool</div><br><br>
+<div id="head2">Analyze a URL<br>  <span id="head2-1"> Before You Trust It.</span></div><br>
+<div id="head3">Enter a website URL and LinkShield will analyze its structure for suspicious<br> characteristics.</div><br><br>
+
+<div id="input-box">
+    <div id="input" style="line-height : 30px;"> 
+        <span id ="inp-head">🔍 URL Security Scanner</span><br>
+        <span id="inp-head2">Enter a URL below to analyze its security indicators.</span>
+    </div><br>
+    <input id = "scanner" type="textbox" placeholder="🔗 https://example.com">
+    <input type="button" value="🛡 Analyze URL" id="scan-button" onclick="analyze()"><br><br>
+    <div id="inp-head3">Example:<span id="inp-head3-1"> <a href="#"style="text-decoration:none; color : #087bdd;">https://www.google.com</a> </span></div>
+</div><br><br><br><br><br><br>
+
+
+
+<!-- analysis body --> 
+ 
+
+
+
+
+    <div id="Scanner-main-box">
+        <div id="upper-scan">Scan Result</div>
+        
+        <div id="upper-box">
+            <div id="score-display">
+                <div id="display-anim">
+                <p id="result-score"><span id ="result-score-1"></span><br>/100</p>
+                </div>
+            </div>
+            <div id="score-title" ><br><br>
+                <div id="risk-type"></div><br>
+                <div id="risk-type-title"></div><br>
+                <div id="risk-type-element">✓ Low Risk</div>
+        
+        
+            </div>
+
+            <div id="url-info">
+                <p class="url-info1">Scanned URL<br><span id="scan-url-1" class="upper3-1"></span></p><br>
+                <p class="url-info1">Risk Score<br><span id="risk-score-1" class="upper3-1"></span></p><br>
+                <p class="url-info1">Risk Level<br><span id="risk-level" class="upper3-1"></span></p><br>
+            </div>
+        </div>
+        <div id="lower-box">
+
+            <div id="url-indicators" class="box3" ><br>
+                <p id="risk-indicator">⚠ Risk Indicators</p><br><br>
+                <!-- use bullets like warning logo-->
+                    <p class="indicators" id="indicator-1"></p><br>
+                    <p class="indicators" id="indicator-2"></p><br>
+                    <p class="indicators" id="indicator-3"></p><br>
+                    <p class="indicators" id="indicator-4"></p><br>
+                    <p class="indicators" id="indicator-5"></p><br>
+                    <p class="indicators" id="indicator-6"></p><br>
+                    <p class="indicators" id="indicator-7"></p><br>
+
+
+            </div>
+            <div class="box3" id="url-overview"><br>
+                <p id = "url-over">🌐 URL Overview</p><br><br>
+                    
+                        <p id="over1" class="over-class">Protocol :<br>     </p><span id="over1-1" class="over-class-1"></span><br><br>
+
+                    
+                    
+                        <p id="over2" class="over-class">Domain : <br>      </p><span id="over2-2" class="over-class-1"></span><br><br>
+
+                    
+                    
+                        <p id="over3" class="over-class">URL Length : <br>      </p><span id="over3-3" class="over-class-1"></span><br><br>
+
+
+                    
+                        <p id="over4" class="over-class">Subdomains :    <br>   </p><span id="over4-4" class="over-class-1"></span><br><br>  <br>
+
+                
+
+
+
+            </div>
+
+            <div class="box3" id="safety-tip"><br>
+            
+                <p id="safety-head">💡 Safety Tips</p><br><br>
+                    <p class="tips">Check the domain carefully.</p><br>
+                    <p class="tips">Prefer HTTPS websites.</p><br>
+                    <p class="tips">Avoid unknown links.</p><br>
+                    <p class="tips">Never share passwords on suspicious websites.</p><br>
+                    
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+
+
+
+
+<!-- Features Tab -->
+
+<div id="feature-head">FEATURES</div><br>
+<div id="feature-head2">What LinkShield Checks</div><br>
+<div id="feature-head3">LinkShield looks for common suspicious characteristics in URLs.</div><br><br>
+
+
+<div class="grp">
+    <div class="box1"  id="bx1">🔒<br>
+        <span class="box-head">HTTPS Check</span><br><br>Checks whether the URL uses HTTPS.</div>
+        <div class="box1">📏<br>
+            <span class="box-head">URL Length</span><br><br>Detects unusually long URLs. 
+        </div>
+     <div class="box1">@<br>
+         <span class="box-head">Special Characters</span><br><br>Detects unusual characters such as @.
+     </div>
+    <div class="box1">🌐<br>
+        <span class="box-head">IP Detection</span><br><br>Checks whether an IP address is used instead of a normal domain.
+    </div>
+    <div class="box1">🔑<br>
+        <span class="box-head">Keyword Analysis</span><br><br>Searches for potentially suspicious keywords.
+    </div>
+    <div class="box1">🔗<br>
+        <span class="box-head">Subdomain Analysis</span><br><br>Checks for unusually complex domain structures.
+    </div>
+
+ </div>  <br><br><br><br> <br>
+    <!-- process tab-->
+    <div class="process-head" id="pro">PROCESS</div><br>
+    <div class="process-head2">How It Works</div><br><br>
+        <div id="process-box">
+            <div class="box2"><span class="num1">01</span><br> <span class="num-head">Enter URL</span><br>Enter the website address you want to analyze.</div>
+            <div class="box2"><span class="num1">02</span><br> <span class="num-head">Analyze</span><br>JavaScript examines the URL structure.</div>
+            <div class="box2"><span class="num1">03</span><br> <span class="num-head">Risk Score</span><br>Suspicious indicators contribute to a risk score.</div>
+            <div class="box2"><span class="num1">04</span><br> <span class="num-head">Stay Safe</span><br>Use the result as a preliminary security check.</div>
+        </div><br><br><br><br>
+
+
+
+
+
+<!-- About tab -->
+<div id="about">ABOUT</div><br>
+<div id="about-head">About LinkShield</div><br>
+<div id="about-head2">LinkShield is a client-side URL Security Analyzer developed as a Web Fundamentals project using HTML, CSS, and JavaScript. It analyzes website URLs by checking various characteristics, including HTTPS usage, URL length, suspicious keywords, special characters, and domain structure. Based on these indicators, it generates a risk score to help users identify potentially suspicious links before visiting them.
+The main goal of LinkShield is to promote safe browsing habits and increase awareness of common URL-based threats. It provides a simple, user-friendly interface for preliminary URL analysis. LinkShield uses heuristic-based checks and does not guarantee that a website is completely safe or malicious.</div>
+<br><br><br><br><br><hr><br><br>
+<!-- footer tab -->
+<footer>
+    <div id="footer-logo">🛡 LinkShield</div>
+    <div id="footer-head">URL Security Analyzer • Web Fundamentals Project</div><br>
+    <div id="disclaimer">Disclaimer: LinkShield performs heuristic URL analysis. It cannot guarantee that a URL is completely safe or malicious.</div><br><br><br><br>
+</footer>
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>
